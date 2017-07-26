@@ -1,2 +1,27 @@
 # mor-stripe
-Custom Payment for Admin as Merchant on Record using Stripe
+Copyright (c) 2017 Arcadier
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+=========================================================================================================
+Simple step by step on how to configure the custom payment per the Arcadier admin interface
+
+Step 1: Login to your <b>marketplace admin portal</b> using your admin credentials
+
+Step 2: Go to <b>Payments & Transactions</b> > <b>Configure Payments</b> and click on <b>Add a custom payment method</b>. (You may also edit an existing custom payment method)
+
+Step 3: Fill in the required fields with the relevant information like <b>Payment Name</b>, <b>Logo</b> and <b>description</b>
+
+Step 4: Create the <b>Handshake</b> and <b>Call back file</b> or you may also use the one attached here
+
+Step 5: Input your <b>Handshake / Connection URL</b> (e.g: https://www.yourdomain.com/payments/handshake.php )
+
+Steps 6: Input your <b>Call back / Redirect URL</b> (e.g.: https://www.yourdomain.com/payments/stripe-pay.php )
+
+Step 7: Create one database and table to store the <b>PayKey</b> and return it, the code is already given in the files and all you have to do is the connection on the <b>config.php</b> file as per your database
+
+Step 8: Once completed, the payment method will be available on your marketplace for your sellers to onboard with and your buyers to checkout.
