@@ -11,7 +11,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 <br/>
 Simple step by step on how to configure the custom payment per the Arcadier admin interface
 
-Step 1: Download and extract the <a href= "https://github.com/Arcadier/mor-stripe/blob/master/arcadier-mor-stripe.zip">arcadier-mor-stripe.zip file</a>, and import the <b>payment_logs.sql</b> file into your database, or you may create your own table  but make sure you set the table name in file under the same name
+Step 1: Download and extract the <a href= "https://github.com/Arcadier/mor-stripe/blob/master/arcadier-mor-stripe.zip" target="_blank">arcadier-mor-stripe.zip file</a>, and import the <b>payment_logs.sql</b> file into your database, or you may create your own table  but make sure you set the table name in file under the same name
 
 Step 2: Open the <b>config.php file</b>, set your site url and your maketplace site url for the API call followed by seting the <b>database connection information</b>
 
