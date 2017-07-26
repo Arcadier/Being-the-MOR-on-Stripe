@@ -10,18 +10,22 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 =========================================================================================================
 Simple step by step on how to configure the custom payment per the Arcadier admin interface
 
-Step 1: Login to your <b>marketplace admin portal</b> using your admin credentials
+Step 1: Download Extract the zip file, and import the <b>payment_logs.sql</b> file into your database, or you may create your own table  but make sure you set the table name in file under the same name
 
-Step 2: Go to <b>Payments & Transactions</b> > <b>Configure Payments</b> and click on <b>Add a custom payment method</b>. (You may also edit an existing custom payment method)
+Step 2: Open the <b>config.php file</b>, set your site url and your maketplace site url for the API call followed by seting the <b>database connection information</b>
 
-Step 3: Fill in the required fields with the relevant information like <b>Payment Name</b>, <b>Logo</b> and <b>description</b>
+Step 3: Login to your <b>marketplace admin portal</b> using your admin credentials
 
-Step 4: Create the <b>Handshake</b> and <b>Call back file</b> or you may also use the one attached here
+Step 4: Go to <b>Payments & Transactions</b> > <b>Configure Payments</b> and click on <b>Add a custom payment method</b>. (You may also edit an existing custom payment method)
 
-Step 5: Input your <b>Handshake / Connection URL</b> (e.g: https://www.yourdomain.com/payments/handshake.php )
+Step 5: Fill in the required fields with the relevant information like <b>Payment Name</b>, <b>Logo</b> and <b>description</b>
 
-Steps 6: Input your <b>Call back / Redirect URL</b> (e.g.: https://www.yourdomain.com/payments/stripe-pay.php )
+Step 6: Create the <b>Handshake</b> and <b>Call back file</b> or you may also use the one attached here
 
-Step 7: Create one database and table to store the <b>PayKey</b> and return it, the code is already given in the files and all you have to do is the connection on the <b>config.php</b> file as per your database
+Step 7: Input your <b>Handshake / Connection URL</b> (e.g: https://www.yourdomain.com/payments/handshake.php )
 
-Step 8: Once completed, the payment method will be available on your marketplace for your sellers to onboard with and your buyers to checkout.
+Steps 8: Input your <b>Call back / Redirect URL</b> (e.g.: https://www.yourdomain.com/payments/stripe-pay.php )
+
+Step 9: Create one database and table to store the <b>PayKey</b> and return it, the code is already given in the files and all you have to do is the connection on the <b>config.php</b> file as per your database
+
+Step 10: Once completed, the payment method will be available on your marketplace for your sellers to onboard with and your buyers to checkout.
